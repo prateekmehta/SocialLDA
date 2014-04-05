@@ -1,0 +1,63 @@
+Total number of different labels (components/communities): 36903
+List of labels was written to file: /home/hduser/IRE_MAJOR/dataset/TwitterGraph/twitter_rv.net.components
+1. label: 56569558, size: 41527446
+2. label: 59385009, size: 330
+3. label: 58047331, size: 277
+4. label: 15627980, size: 209
+5. label: 61128799, size: 161
+6. label: 22678994, size: 153
+7. label: 16828429, size: 147
+8. label: 31543579, size: 140
+9. label: 16234468, size: 134
+10. label: 53820140, size: 130
+11. label: 61239453, size: 122
+12. label: 18349255, size: 121
+13. label: 15894669, size: 115
+14. label: 53855252, size: 108
+15. label: 14689232, size: 104
+16. label: 16839617, size: 103
+17. label: 29303255, size: 98
+18. label: 24773350, size: 95
+19. label: 14507968, size: 93
+20. label: 14373881, size: 91
+
+ === REPORT FOR community-detection() ===
+[Numeric]
+cachesize_mb:		0
+compression:		1
+execthreads:		4
+loadthreads:		4
+membudget_mb:		800
+niothreads:		2
+niters:		10
+nshards:		113
+nvertices:		6.15784e+07
+scheduler:		1
+serialized-updates:		5.4437e+07	(count: 1138, min: 0, max: 465339, avg: 47835.6)
+stripesize:		1.07374e+09
+updates:		1.71771e+08
+work:		1.12311e+10
+[Timings]
+blockload:		7632.12s	 (count: 61739, min: 4e-06s, max: 2.17953, avg: 0.123619s)
+commit:		27.0722s	 (count: 3268, min: 0.000423s, max: 0.330984, avg: 0.00828404s)
+commit_thr:		1580.73s	 (count: 153938, min: 0.004474s, max: 1.39475, avg: 0.0102686s)
+execute-updates:		1038.94s	 (count: 1138, min: 0.000206s, max: 12.3221, avg: 0.912952s)
+iomgr_init:		0.000192 s
+label-analysis:		5.78301 s
+memoryshard_create_edges:		498.05s	 (count: 1138, min: 0.063942s, max: 1.77084, avg: 0.437653s)
+memshard_commit:		218.155s	 (count: 1002, min: 0.030528s, max: 1.54275, avg: 0.21772s)
+preada_now:		11892.2s	 (count: 68370, min: 3e-06s, max: 4.89103, avg: 0.173939s)
+pwritea_now:		411.421s	 (count: 37243, min: 1.7e-05s, max: 0.802236, avg: 0.0110469s)
+read_next_vertices:		9084.77s	 (count: 127456, min: 8e-06s, max: 2.57837, avg: 0.0712777s)
+runtime:		6314.96 s
+stripedio_wait_for_reads:		1366.73s	 (count: 1138, min: 0s, max: 7.29793, avg: 1.20099s)
+stripedio_wait_for_writes:		275.244s	 (count: 1141, min: 0s, max: 1.80692, avg: 0.241231s)
+[Other]
+app:	community-detection
+engine:	default
+file:	/home/hduser/IRE_MAJOR/dataset/TwitterGraph/twitter_rv.net
+
+real	105m21.392s
+user	94m40.628s
+sys	6m1.060s
+

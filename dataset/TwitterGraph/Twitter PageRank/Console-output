@@ -1,0 +1,55 @@
+Print top 20 vertices:
+1. 813286	13784.5
+2. 14224719	10926.5
+3. 15131310	9047.76
+4. 31567254	8997.97
+5. 16409683	7859.84
+6. 14075928	6294.32
+7. 7040932	6135.13
+8. 12687952	4806.45
+9. 5380672	4599.83
+10. 26784273	2705.99
+11. 5741722	2606.12
+12. 6149912	2364.46
+13. 6449282	2222.01
+14. 14994465	2181.32
+15. 17850012	2050.56
+16. 14230524	1961.23
+17. 30973	1945.44
+18. 20385404	1803.55
+19. 16559157	1705.72
+20. 16569530	1682.61
+
+ === REPORT FOR pagerank() ===
+[Numeric]
+cachesize_mb:		0
+compression:		0
+execthreads:		4
+loadthreads:		4
+membudget_mb:		800
+niothreads:		2
+niters:		4
+nshards:		57
+nvertices:		6.15784e+07
+scheduler:		0
+serialized-updates:		8.3436e+07	(count: 232, min: 15142, max: 932264, avg: 359638)
+stripesize:		1.07374e+09
+updates:		2.46314e+08
+work:		5.87346e+09
+[Timings]
+execute-updates:		106.561s	 (count: 232, min: 0.011647s, max: 1.19802, avg: 0.459316s)
+iomgr_init:		0.000188 s
+memoryshard_create_edges:		390.074s	 (count: 232, min: 0.167467s, max: 2.39978, avg: 1.68136s)
+preada_now:		1406.05s	 (count: 2148, min: 2.6e-05s, max: 2.52859, avg: 0.654584s)
+pwritea_now:		0.900172s	 (count: 58, min: 0.000948s, max: 0.473799, avg: 0.0155202s)
+runtime:		1036.54 s
+stripedio_wait_for_reads:		0.000543s	 (count: 232, min: 0s, max: 8e-06, avg: 2.34052e-06s)
+stripedio_wait_for_writes:		0.001488s	 (count: 233, min: 1e-06s, max: 9e-06, avg: 6.38627e-06s)
+[Other]
+app:	pagerank
+engine:	default
+file:	/home/hduser/IRE_MAJOR/dataset/TwitterGraph/twitter_rv.net
+
+real	54m42.472s
+user	39m56.500s
+sys	3m58.268s
