@@ -2,11 +2,14 @@ from twython import Twython, TwythonError
 from collections import defaultdict
 from pprint import pprint
 
+
 APP_KEY =#addyourAPPKEY 
 APP_SECRET =#addyoutappsecret 
 
 
 ACCESS_TOKEN = #addyours
+
+
 twitter = Twython(APP_KEY, access_token=ACCESS_TOKEN)
 
 f = open("Obama",'a')
