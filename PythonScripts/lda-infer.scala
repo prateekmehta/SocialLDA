@@ -13,7 +13,7 @@ import edu.stanford.nlp.tmt.model.lda._;
 import edu.stanford.nlp.tmt.model.llda._;
 
 // the path of the model to load
-val modelPath = file("lda-b9969714-30-fd2bc43e");
+val modelPath = file(args(1)+"-ldamodel");
 
 println("Loading "+modelPath);
 val model = LoadCVB0LDA(modelPath);
@@ -22,7 +22,7 @@ val model = LoadCVB0LDA(modelPath);
 
 // A new dataset for inference.  (Here we use the same dataset
 // that we trained against, but this file could be something new.)
-val source = TSVFile("Obama") ~> IDColumn(1);
+val source = TSVFile(args(0)+"_tweets") ~> IDColumn(1);
 
 val text = {
   source ~>                              // read from the source file

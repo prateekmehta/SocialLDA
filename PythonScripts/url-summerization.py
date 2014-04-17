@@ -10,8 +10,9 @@ from goose import Goose
 from nltk.corpus import stopwords
 from BeautifulSoup import BeautifulStoneSoup
 
-Tr = open("obama-url-summary.txt",'a')
-
+#Tr = open("obama-url-summary.txt",'a')
+Tr = open(sys.argv[1]+"-url-summary.txt",'a')
+inputFileName = sys.argv[1]+"_urls"
 #==============#
 stop = stopwords.words('english')
 
@@ -161,7 +162,7 @@ def finalsum(a,m,t,url):
         print("url")
     return a + "\n"
 
-inputFileName = "obama-url"
+
 
 if __name__ == '__main__':
     g = Goose() #article extractor
